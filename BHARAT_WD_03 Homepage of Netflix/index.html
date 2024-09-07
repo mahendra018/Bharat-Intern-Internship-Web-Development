@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link rel="stylesheet" href="style.css" class="css">
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assest/image/netflix.png" alt="Netflix Logo"> <!-- Update this path -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Series</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">My List</a></li>
+                <li class="search-container">
+                    <button class="search-icon" onclick="toggleSearch()">🔍</button>
+                    <input type="text" class="search-box" placeholder="Search...">
+                </li>
+                <li><img src="assest/image/profile.png" alt="Profile" class="profile-icon"></li>
+            </ul>
+        </nav>
+        <div class="hero-section">
+            <div class="movie-info">
+                <h1>Movie Title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut orci vel quam aliquet tincidunt.
+                </p>
+                <div class="buttons">
+                    <button class="btn watch-now">Watch Now</button>
+                    <button class="btn add-list">Add to List</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <main>
+            <section class="trending">
+                <h2>Trending Now</h2>
+                <div class="box-container">
+
+                    <div class="box">
+                        <img src="assest/trend/1.jpeg" alt="Trending Image 1">
+                        <h3>SEE</h3>
+                        <p>"SEE" is an epic post-apocalyptic drama featuring blind societies and powerful conflicts.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/trend/2.jpeg" alt="Trending Image 2">
+                        <h3>wednesday</h3>
+                        <p>"Wednesday" is a darkly comedic series focusing on Wednesday Addams' adventures.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/trend/3.jpeg" alt="Trending Image 3">
+                        <h3>Spiderhead</h3>
+                        <p>"Spiderhead" is a sci-fi thriller about mind-altering experiments in prison.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/trend/4.jpeg" alt="Movie Image 4">
+                        <h3>Travelers</h3>
+                        <p>"Travelers" follows time-travelers preventing disasters by inhabiting modern bodies.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/trend/5.jpeg" alt="Movie Image 5">
+                        <h3>Sabrina </h3>
+                        <p>"Sabrina" blends witchcraft and drama with a young sorceress's adventures.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/trend/6.jpeg" alt="Movie Image 6">
+                        <h3>lucifer</h3>
+                        <p>"Lucifer" explores the Devil's life on Earth, blending crime-solving and supernatural
+                            elements.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/trend/7.jpeg" alt="Movie Image 7">
+                        <h3>Money Heist</h3>
+                        <p>"Money Heist" follows a criminal mastermind and his team robbing a royal mint.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="movies">
+                <h2>Movies</h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="assest/movies/1.jpeg" alt="Trending Image 1">
+                        <h3>Rider Of Justice</h3>
+                        <p>"Rider of Justice" is a darkly comedic thriller involving justice and vengeance.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/movies/2.jpeg" alt="Trending Image 2">
+                        <h3>jailer</h3>
+                        <p>"Jailer" is an action-packed film featuring a fearless prison officer dealing with dangerous
+                            criminals.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/movies/3.jpeg" alt="Trending Image 3">
+                        <h3>I'm Your Women </h3>
+                        <p>"I'm Your Woman" is a crime drama about a woman on the run.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/movies/4.jpeg" alt="Movie Image 4">
+                        <h3>Within Me </h3>
+                        <p>"Within Me" is a psychological thriller exploring inner struggles and dark secrets.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/movies/5.jpeg" alt="Movie Image 5">
+                        <h3>Kin</h3>
+                        <p>"Kin" is a sci-fi action film about a young man and his alien weapon.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/movies/6.jpeg" alt="Movie Image 6">
+                        <h3>Tomb Raider</h3>
+                        <p>"Tomb Raider" follows Lara Croft's adventurous quest to uncover ancient secrets and treasure.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/movies/7.jpeg" alt="Movie Image 7">
+                        <h3>Jack Ryan</h3>
+                        <p>"Jack Ryan" is an action-packed series featuring a CIA analyst turned field operative.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="last-series">
+                <h2>Series</h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="assest/series/1.jpeg" alt="Trending Image 1">
+                        <h3>You</h3>
+                        <p>"You" is a psychological thriller centered on a charming but obsessive stalker.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/series/2.jpeg" alt="Trending Image 2">
+                        <h3>Deadboy Detective</h3>
+                        <p>"Deadboy Detectives" combines supernatural elements with detective work by deceased teens.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/series/3.jpeg" alt="Trending Image 3">
+                        <h3>Inocente</h3>
+                        <p>"Inocente" is a documentary about a young, undocumented artist pursuing her dreams.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/series/4.jpeg" alt="Movie Image 4">
+                        <h3>The Queen'S Gambit</h3>
+                        <p>"The Queen's Gambit" follows a young chess prodigy's rise to fame and personal struggles.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/series/5.jpeg" alt="Movie Image 5">
+                        <h3>Sex Education</h3>
+                        <p>"Sex Education" explores teenage issues and relationships through a high school sex
+                            therapist.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/series/6.jpeg" alt="Movie Image 6">
+                        <h3>DARK</h3>
+                        <p>"DARK" is a German sci-fi thriller involving time travel and interconnected families.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assest/series/7.jpeg" alt="Movie Image 7">
+                        <h3>Qin-Hai-lu</h3>
+                        <p>"Qin-Hai-lu" is a Chinese drama exploring historical and cultural themes through intricate
+                            storytelling.</p>
+                    </div>
+
+                </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Netflix Clone. All rights reserved.</p>
+        </footer>
+
+        <script defer src="script.js"></script>
+</body>
+
+</html>

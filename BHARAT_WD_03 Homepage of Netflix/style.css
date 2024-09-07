@@ -1,0 +1,225 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000; /* Black background */
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000; /* Black background */
+}
+
+.logo img {
+    width: 50px; /* Adjust as needed */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+    color: #fff; /* White text for the logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f00; /* Red color on hover */
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    color: #fff; /* White */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.search-box {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 0.5rem;
+    border: 1px solid #fff; /* White border */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    border-radius: 4px;
+    width: 200px;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.hero-section {
+    background-image: url('assest/image/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 880px;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.movie-info {
+    max-width: 500px;
+}
+
+.movie-info h1 {
+    font-size: 2.5rem;
+}
+
+.movie-info p {
+    margin: 1rem 0;
+}
+
+.buttons {
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.watch-now {
+    background-color: #f00; /* Red */
+    color: #fff; /* White */
+}
+
+.watch-now:hover {
+    background-color: #d00; /* Darker red */
+    transform: scale(1.05);
+}
+
+.add-list {
+    background-color: #f00; /* Red */
+    color: #fff; /* White */
+}
+
+.add-list:hover {
+    background-color: #d00; /* Darker red */
+    transform: scale(1.05);
+}
+
+main {
+    padding: 2rem;
+}
+
+section h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 2rem; /* Adjust size as needed */
+    color: #fff; /* White text */
+}
+
+.box-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+/* Custom Scrollbar */
+.box-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.box-container::-webkit-scrollbar-track {
+    background: #000; /* Black */
+}
+
+.box-container::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.box-container::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+.box {
+    background-color: #222; /* Dark grey */
+    border-radius: 10px;
+    padding: 1rem;
+    width: 200px; /* Fixed width for all boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.box img {
+    width: 100%; /* Ensures the image fills the box width */
+    height: 300px; /* Fixed height for portrait images */
+    object-fit: cover; /* Ensures the image covers the box area */
+    border-radius: 10px;
+}
+
+.box h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.box p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000; /* Black */
+    padding: 1rem;
+    text-align: center;
+    width: 100%; 
+    position: relative; 
+    bottom: 0;
+    left: 0;
+    color: #fff; /* White text */
+}
+
+footer p {
+    color: #fff; /* White text */
+    margin: 0;
+}
