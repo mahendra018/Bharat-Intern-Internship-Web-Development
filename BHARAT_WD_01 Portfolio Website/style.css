@@ -1,0 +1,388 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1E201E;
+    /* Dark grayish green */
+    color: #ECDFCC;
+    /* Light beige for text */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #3C3D37;
+    /* Slightly lighter grayish green */
+    padding: 10px 20px;
+    color: #ECDFCC;
+    /* Light beige for text */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    background-color: #3C3D37;
+    /* Slightly lighter grayish green */
+    border-radius: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #ECDFCC;
+    /* Light beige for text */
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ECDFCC;
+    /* Light beige for text */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Transition effects */
+}
+
+.nav-links a:hover {
+    color: #697565;
+    /* Grayish green for hover effect */
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+}
+
+main {
+    padding-top: 80px;
+}
+
+/* Container for the typewriter effect */
+.typewriter {
+    display: inline-block;
+    position: relative;
+}
+
+/* Typing Animation */
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 4s steps(40, end) infinite, /* Typing effect */
+               blink-caret .75s step-end infinite, /* Cursor blink effect */
+               erase 4s steps(40, end) infinite; /* Erase effect */
+}
+
+/* Typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Erase effect */
+@keyframes erase {
+    0% { width: 100% }
+    100% { width: 0 }
+}
+
+/* Cursor blink effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffd700; }
+}
+
+
+
+/* Stop cursor blinking when animation ends */
+.typewriter h1.typing-finished {
+    border-right: none; /* Hide the cursor when typing is done */
+    animation: none; /* Stop all animations */
+}
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ECDFCC;
+    /* Light beige for headings */
+    border-bottom: 2px solid #3C3D37;
+    /* Border for separation */
+    padding-bottom: 10px;
+    /* Padding for space between heading and border */
+    display: inline-block;
+    /* Keep border and heading together */
+}
+
+/* Intro Section */
+.intro {
+    background: url('image/bg.jpg') no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the container */
+    background-position: center center; /* Center the background image */
+    background-attachment: fixed; /* Optional: Keeps background fixed while scrolling */
+    color: #131010; /* Text color */
+    padding: 0; /* Remove padding if not needed */
+    height: 50vh; /* Height is 50% of viewport height */
+    text-align: center; /* Center text horizontally */
+    display: flex; /* Flexbox for centering content vertically */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .intro {
+        height: 40vh; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        height: 30vh; /* Further adjust height for very small screens */
+    }
+}
+
+.intro h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 60%;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #1E201E;
+    /* Dark background color */
+}
+
+/* General Heading Styles */
+h2 {
+    text-align: center;
+    position: relative; /* For positioning the underline */
+    font-size: 2em; /* Adjust size as needed */
+    margin-bottom: 20px;
+    color: #ECDFCC; /* Text color */
+}
+
+h2::after {
+    content: '';
+    display: block;
+    height: 3px; /* Thickness of the underline */
+    background-color: #3C3D37; /* Default underline color */
+    width: 50%; /* Adjust width of the underline */
+    margin: 10px auto 0; /* Center the underline */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+h2:hover::after {
+    background-color: #ffd700; /* Highlight color on hover */
+}
+
+/* "My Skills" Section */
+.skills-section h2 {
+    color: #ECDFCC; /* Heading text color */
+}
+
+/* "My Services" Section */
+.services-section h2 {
+    color: #ECDFCC; /* Heading text color */
+}
+
+
+.skills-section {
+    padding: 60px 20px;
+    text-align: center;
+    /* Center the section title */
+    background-color: #3C3D37;
+    /* Background color for the section */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-box {
+    background-color: #697565; /* Box background color */
+    width: 22%; /* Adjust width to fit four boxes in one row */
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    color: #ECDFCC; /* Default text color */
+}
+
+.skill-box:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #3C3D37; /* Darker background color on hover */
+    color: #ECDFCC; /* Ensure text color is visible */
+}
+
+
+
+.skill-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+    /* Center the section title */
+    background-color: #3C3D37;
+    /* Background color for the section */
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-box {
+    background-color: #697565; /* Box background color */
+    width: 30%; /* Adjust width for three boxes in one row */
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    color: #ECDFCC; /* Default text color */
+}
+
+.service-box:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #3C3D37; /* Darker background color on hover */
+    color: #ECDFCC; /* Ensure text color is visible */
+}
+
+.service-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* About Me Section */
+.about-section {
+    padding: 40px 20px; /* Adjust padding for top/bottom and sides */
+    background-color: #1E201E; /* Background color of the section */
+    color: #ECDFCC; /* Text color */
+    text-align: center; /* Center text */
+    margin: 20px 0; /* Margin to separate from other sections */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.about-section h2 {
+    font-size: 2.5em; /* Adjust heading size */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #ECDFCC; /* Heading color */
+}
+
+.about-section p {
+    font-size: 1.2em; /* Adjust font size */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0 auto; /* Center the paragraph */
+    width: 80%; /* Adjust width to fit content */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #141414; /* Background color for the footer */
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Ensures the footer spans the entire width */
+    position: relative; /* Allows footer to stay at the bottom of the page if there's enough content */
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    color: #fff; /* Text color for the copyright notice */
+    margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        /* Space between menu items on smaller screens */
+    }
+
+    .intro p {
+        width: 80%;
+    }
+
+    .skills-container,
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box,
+    .service-box {
+        width: 80%;
+    }
+
+    .about-section p {
+        width: 80%;
+    }
+}
