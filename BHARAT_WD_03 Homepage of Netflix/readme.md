@@ -39,6 +39,7 @@ The horizontal scrollable sections include customized scrollbars, enhancing the 
 
 ![1](https://github.com/user-attachments/assets/e4882b8a-b506-4f9e-abfc-da0dd1ab9ead)
 ![2](https://github.com/user-attachments/assets/ad6d8c80-284c-49a3-802c-c8c895804818)
-![3](https://github.com/user-attachments/assets/2faf0f41-3645-429d-88a9-24176acc33ef)
+![3](https://github.com/user-attachments/assets/a9112a7a-f3d3-48f4-b046-2107adcf6821)
+
 
 
