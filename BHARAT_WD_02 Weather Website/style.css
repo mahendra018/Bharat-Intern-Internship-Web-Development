@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15719f; /* Dark background color */
+    color: #f1f1f1; /* Light text color for better visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('image/bg.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image in place */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(22, 113, 159, 0.8); /* Slightly transparent background for the container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #528ab4; /* Input border color */
+    border-radius: 4px;
+    background-color: #7bc7dd; /* Light input background */
+    color: #f1f1f1; /* Light text color for visibility */
+}
+
+#search-btn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #528ab4; /* Primary button color */
+    color: #fff; /* Button text color for contrast */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: #15719f; /* Darker shade on hover */
+}
+
+.weather-info, .forecast-info {
+    display: none;
+    margin-top: 20px;
+}
+
+.weather-box, .forecast-box {
+    padding: 20px;
+    background-color: rgba(82, 138, 180, 0.8); /* Darker background with transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    backdrop-filter: blur(40px); /* Strong blur effect */
+    opacity: 0.95; /* Slight opacity for more visual depth */
+    color: #f1f1f1; /* Ensure text color inside the boxes is light */
+}
+
+.weather-box:hover, .forecast-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(50px); /* Even more blur on hover */
+}
+
+#weather-icon, .forecast-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.forecast-info h2 {
+    margin-bottom: 20px;
+    color: #f1f1f1; /* Light color for header text */
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.forecast-box {
+    text-align: center;
+    padding: 10px;
+    background-color: #7bc7dd; /* Slightly different light background for forecast */
+    border-radius: 8px;
+    color: #f1f1f1; /* Darker text color for contrast against light background */
+}
+
+#not-found-icon {
+    width: 150px;
+    height: 150px;
+}
+
+#city-name, #temperature, #description {
+    color: #f1f1f1; /* Ensure text is visible and contrasts against darker backgrounds */
+}
